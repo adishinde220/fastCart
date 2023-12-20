@@ -7,18 +7,23 @@ import { SharedModule } from './shared/shared.module';
 import { CoreModule } from './core/core.module';
 import { HomeComponent } from './components/home/home.component';
 import { NavbarComponent } from './components/home/navbar/navbar.component';
+import { TopDealsComponent } from './components/home/top-deals/top-deals.component';
+import { HttpClientModule} from '@angular/common/http'
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    NavbarComponent
+    NavbarComponent,
+    TopDealsComponent,
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     SharedModule,
-    CoreModule
+    CoreModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
